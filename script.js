@@ -1,22 +1,3 @@
-// const productBox = document.getElementById("products");
-
-// fetch("https://fakestoreapi.com/products/")
-// .then(res => res.json())
-// .then(data => {
-//     data.forEach(product => {
-//         productBox.innerHTML += `
-//         <div class="card">
-//             <img src="${product.image}" alt="">
-//             <h4>${product.title}</h4>
-//             <div class="price">₹${(product.price * 20)}</div>
-//             <div class="rating">⭐ ${product.rating.rate}</div>
-//         </div>
-//         `;
-//     });
-// })
-// .catch(err => console.log(err));
-
-
 fetch("https://fakestoreapi.com/products/")
   .then((p) => {
     return p.json();
@@ -41,4 +22,5 @@ fetch("https://fakestoreapi.com/products/")
     });
   })
   .catch((err) => console.log(err));
+
 
